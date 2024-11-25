@@ -1,0 +1,24 @@
+site_name: ITSM365.Support 
+theme:
+  name: material # https://squidfunk.github.io/mkdocs-material/
+  favicon: logo.png
+
+nav:
+ - Быстрый старт: docs/QS/Quick_Start_00.md
+   - Наполнение оргструктуры: docs/QS/Quick_Start_1.md
+   - Настройка правил для расчета времени на решение заявок: docs/QS/Quick_Start_2.md
+   - Настройка оповещений по email и уведомлений в интерфейсе: docs/QS/Quick_Start_3.md
+   - Настройка регистрации заявок по почте: docs/QS/Quick_Start_4.md
+   - Регистрация заявки: docs/QS/Quick_Start_5.md
+ - Подключаемые модули (не готово): 
+   - Управление финансами: docs/financial_management_1.md
+   # - Настройка процесса: 
+   # - Управление финансами в договоре: 
+   # - Управление финансами в заявке: 
+
+plugins:
+    - search:
+        lang:
+          - ru
+
+
