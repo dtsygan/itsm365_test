@@ -1,0 +1,647 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Quick_Start_2/">
+      
+      
+        <link rel="next" href="../Quick_Start_4/">
+      
+      
+      <link rel="icon" href="../logo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Настройка оповещений по email и уведомлений в интерфейсе - ITSM365.Support</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ITSM365.Support" class="md-header__button md-logo" aria-label="ITSM365.Support" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ITSM365.Support
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Настройка оповещений по email и уведомлений в интерфейсе
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ITSM365.Support" class="md-nav__button md-logo" aria-label="ITSM365.Support" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ITSM365.Support
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Быстрый старт
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Быстрый старт
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quick_Start_00/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Быстрый старт ITSM 365
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quick_Start_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Наполнение оргструктуры
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quick_Start_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Настройка правил для расчета времени на решение заявок
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Настройка оповещений по email и уведомлений в интерфейсе
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quick_Start_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Настройка регистрации заявок по почте
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quick_Start_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Регистрация заявки
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 MadCap:conditions="Default.WEB-HELP" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Настройка оповещений по email и уведомлений в интерфейсе</h1>
+<h2 MadCap:conditions="Default.PDF" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Настройка оповещений по email и уведомлений в интерфейсе</h2>
+<p MadCap:conditions="" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Для эффективной работы сервисного подразделения и своевременного информирования сотрудников о выполнении каких-либо действий в системе используются оповещения по электронной почте и пуш-уведомления в интерфейсе</p>
+
+<ul MadCap:conditions="Default.WEB-HELP" class="TOC" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <li>
+    <MadCap:xref href="#01">Группы оповещений по email и пуш-уведомлений в интерфейсе</MadCap:xref>
+  </li>
+  <li>
+    <MadCap:xref href="#02">Настройка исходящей почты</MadCap:xref>
+  </li>
+</ul>
+<h3 MadCap:conditions="" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <a name="01"></a>Группы оповещений по email и пуш-уведомлений в интерфейсе</h3>
+<p MadCap:conditions="" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">В <MadCap:variable name="Base.ProductName" /> существует две группы оповещений и пуш-уведомлений в интерфейсе:</p>
+
+<ul class="FirstLevel">
+  <li MadCap:conditions="" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <p>Оповещения и пуш-уведомления о событиях с объектами системы: добавление объекта, смена статуса и прочее. </p>
+    <p>
+      <MadCap:variable name="Base.ProductName" /> предлагает определенный набор оповещений и пуш-уведомлений. По умолчанию все оповещения и пуш-уведомления включены. Вы можете отключить неиспользуемые в вашей компании оповещения и пуш-уведомления в интерфейсе технолога. </p>
+    <p MadCap:conditions="Default.WEB-HELP" class="br">Подробное описание отключения оповещений и пуш-уведомлений, см. <MadCap:xref href="../technolog/action_ITSM.htm">Действия по событиям</MadCap:xref>.</p>
+    <p class="ris">
+      <img src="../Resources/Images/core_tech/dps.png" title="Действия по событиям" class="doc" />
+    </p>
+    <p class="img_num" MadCap:conditions="Default.PDF">Страница действия по событиям</p>
+  </li>
+  <li MadCap:conditions="" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <p>Оповещения о наступлении дедлайна заявки, задачи или согласования.</p>
+    <p>
+      <MadCap:variable name="Base.ProductName" /> предлагает определенный набор оповещений о наступлении дедлайна. По умолчанию все оповещения включены. Вы можете отключить неиспользуемые в вашей компании оповещения в интерфейсе технолога.</p>
+    <p MadCap:conditions="Default.WEB-HELP">Подробное описание отключения оповещений, см. <MadCap:xref href="../technolog/eskalacig_ITSM.htm">Эскалация</MadCap:xref>.</p>
+    <p class="ris">
+      <img src="../Resources/Images/core_tech/eck.png" title="Эскалация" class="doc" />
+    </p>
+    <p class="img_num" MadCap:conditions="Default.PDF">Интерфейс настройки. Раздел "Эскалация"</p>
+  </li>
+</ul>
+<p>Подпись к оповещениям и возможность отправки оповещений незарегистрированным пользователям настраиваются в карточке компании на вкладке "Настройки", см. <MadCap:xref href="../setting/settings_mail.htm#01" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Основные настройки почты</MadCap:xref>.</p>
+
+<h3 MadCap:conditions="" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <a name="02"></a>Настройка исходящей почты</h3>
+<p class="note">Для использования оповещений в настройках системы заполните параметры сервера исходящей почты и параметры отправки писем. </p>
+
+<p MadCap:conditions="" class="hH4" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Подключение к серверу исходящей почты</p>
+
+<p>Чтобы заполнить параметры исходящей почты, перейдите в интерфейс технолога (иконка <img alt="" src="../Resources/Images/icon_svg/int_adm.svg" /> в правом верхнем углу экрана), в раздел "Настройка системы" → "Почта" → "Параметры подключения" (вкладка "Исходящая почта") укажите параметры подключения к серверу исходящей почты.</p>
+<p>Подключение к серверу исходящей почты возможно по протоколам SMTP и EWS.</p>
+<table style="width: 100%;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+  <col class="TableStyle-PatternedRows-Column-Column" />
+  <col class="TableStyle-PatternedRows-Column-Column" />
+  <col class="TableStyle-PatternedRows-Column-Column" />
+  <thead>
+    <tr class="TableStyle-PatternedRows-Head-Header">
+      <th class="TableStyle-PatternedRows-HeadE-Column-Header">Параметры/Протокол</th>
+      <th class="TableStyle-PatternedRows-HeadE-Column-Header">SMTP</th>
+      <th class="TableStyle-PatternedRows-HeadD-Column-Header">EWS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="TableStyle-PatternedRows-Body-Body">
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p class="td">Сервер</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p class="td">IP адрес или DNS имя сервера исходящей почты</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyD-Column-Body">
+        <p class="td">IP адрес или DNS имя сервера исходящей почты</p>
+      </td>
+    </tr>
+    <tr class="TableStyle-PatternedRows-Body-Body">
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p class="td">Протокол</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p class="td">SMTP</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyD-Column-Body">
+        <p class="td">EWS</p>
+      </td>
+    </tr>
+    <tr class="TableStyle-PatternedRows-Body-Body">
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p class="td">Порт</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p class="td">Порт, соответствующий типу соединения (цифрами)</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyD-Column-Body">
+        <p class="td">—</p>
+      </td>
+    </tr>
+    <tr class="TableStyle-PatternedRows-Body-Body">
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p class="td">Протокол шифрования</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p class="td">Возможные значения: "SSL", "TLS" или "Без шифрования"</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyD-Column-Body">
+        <p class="td">—</p>
+      </td>
+    </tr>
+    <tr class="TableStyle-PatternedRows-Body-Body">
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p class="td">Аутентификация SMTP</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p class="td">При необходимости аутентификации на SMTP сервере установите флажок (данное требование определяется настройками SMTP сервера).</p>
+        <p class="td">По умолчанию аутентификация SMTP не включена</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyD-Column-Body">
+        <p class="td">—</p>
+      </td>
+    </tr>
+    <tr class="TableStyle-PatternedRows-Body-Body">
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p>Аутентификация OAuth2</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p>—</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyD-Column-Body">
+        <p class="td">При необходимости использования для авторизации протокола OAuth2 установите флажок. </p>
+        <p class="td">Данный тип аутентификации позволяет подключаться без использования пароля на прямую. Для подключения используются токены доступа полученные из AzureAD.</p>
+        <p class="td">Если флажок включен, то на форме отображаются дополнительные параметры:</p>
+        <ul class="tab">
+          <li>Идентификатор приложения</li>
+          <li>Идентификатор каталога</li>
+          <li>Секрет клиента</li>
+        </ul>
+        <p class="td">Значения параметров заполняются данными, полученными при регистрации приложения в Azure AD</p>
+      </td>
+    </tr>
+    <tr class="TableStyle-PatternedRows-Body-Body">
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p class="td">Логин</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyE-Column-Body">
+        <p class="td">Имя пользователя для отправки сообщений</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyD-Column-Body">
+        <p class="td">Имя пользователя для отправки сообщений</p>
+      </td>
+    </tr>
+    <tr class="TableStyle-PatternedRows-Body-Body">
+      <td class="TableStyle-PatternedRows-BodyB-Column-Body">
+        <p class="td">Пароль</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyB-Column-Body">
+        <p class="td">Пароль для отправки сообщений через SMTP-сервер</p>
+      </td>
+      <td class="TableStyle-PatternedRows-BodyA-Column-Body">
+        <p class="td">Пароль для отправки сообщений.</p>
+        <p class="td">При включенном флажке "Аутентификация OAuth2" поле скрывается</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="comment">Параметры "Логин" и "Пароль" имеют значение лишь при включенном параметре "Аутентификация SMTP".</p>
+
+<p class="hH4">Настройка параметров отправки писем</p>
+
+<p>Текущие параметры отправки писем отображаются в карточке подключения.</p>
+<p class="ris">
+  <img src="../Resources/Images/itsm/L-06.png" title="Вкладка &amp;quot;Исходящая почта&amp;quot;" MadCap:conditions="Default.itsm" class="doc" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  <img src="../Resources/Images/itsm_os/L-06.png" title="Вкладка &amp;quot;Исходящая почта&amp;quot;" MadCap:conditions="Default.itsm_OS" class="doc" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+</p>
+
+<p class="img_num" MadCap:conditions="Default.PDF" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Карточка подключения к серверу исходящей почты</p>
+
+<p>Чтобы изменить параметры отправки писем, нажмите кнопку "Редактировать" в блоке "Отправка писем". На форме редактирования заполните параметры отправки писем и нажмите кнопку "Сохранить".</p>
+<p class="beforeList">Параметры отправки писем:</p>
+
+<ul class="FirstLevel">
+  <li>E-mail адрес службы техподдержки — адрес электронной почты, который будет отображаться в поле "Обратный адрес (Reply-to)" письма, отправляемого системой.</li>
+  <li>E-mail адрес системы — адрес электронной почты, который будет отображаться в поле "От кого (From)" письма, отправляемого системой.</li>
+  <li>Имя отправителя писем из системы — имя, которое будет отображаться в поле "От кого (From)" вместе с "E-mail адресом системы".</li>
+</ul>
+<p class="note">Параметры "E-mail адрес службы техподдержки", "E-mail адрес системы" и "Имя отправителя писем из системы" являются обязательными для заполнения, иначе отправка писем не будет работать.</p>
+
+<p>Подробное описание настройки параметров сервера исходящей почты и параметров отправки писем <MadCap:conditionalText MadCap:conditions="Default.WEB-HELP" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">см. <MadCap:xref href="../technolog/outgoing_mail_ITSM.htm">Параметры подключения. Исходящая почта</MadCap:xref></MadCap:conditionalText>.</p>
+
+<p MadCap:conditions="Default.WEB-HELP" class="note_stroca" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"> </p>
+
+<ul class="webHelp">
+  <li MadCap:conditions="Default.WEB-HELP" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Быстрый старт. Шаг 4. <MadCap:xref href="Quick_Start_4.htm">Настройка регистрации заявок по почте</MadCap:xref>.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.path", "navigation.indexes"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
