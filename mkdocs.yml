@@ -8,7 +8,8 @@ theme:
     - navigation.indexes
 
 extra_css:
-    - itsm-styles.css
+    - material-styles.css
+
 nav:
   - Быстрый старт: 
     - Quick_Start_00.md
