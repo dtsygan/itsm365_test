@@ -2,10 +2,13 @@ site_name: ITSM365.Support
 theme:
   name: material # https://squidfunk.github.io/mkdocs-material/
   favicon: logo.png
+  logo: itsm_logo.svg
   features:
     - navigation.path
     - navigation.indexes
 
+extra_css:
+    - itsm-styles.css
 nav:
   - Быстрый старт: 
     - Quick_Start_00.md
