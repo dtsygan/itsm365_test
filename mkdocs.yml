@@ -8,7 +8,7 @@ theme:
     - navigation.indexes
 
 extra_css:
-    - material-styles.css
+    - stylesheets/material-styles.css
 
 nav:
   - Быстрый старт: 
